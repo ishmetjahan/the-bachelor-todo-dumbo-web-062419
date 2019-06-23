@@ -2,7 +2,7 @@ def get_first_name_of_season_winner(data, season)
   data[season].each do |name|
         name.each do |data, type|
         if type == "Winner"
-          return ele[:name].split(" ").first 
+          return ele["name"].split(" ").first 
         end
       end
       return "No Winner"
